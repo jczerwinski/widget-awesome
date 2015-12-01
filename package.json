@@ -19,8 +19,10 @@
   },
   "devDependencies": {
     "browserify": "^8.0.3",
+    "jsdom": "^7.1.0",
     "jshint": "^2.5.5",
     "less": "^2.2.0",
+    "react-addons-test-utils": "^0.14.3",
     "reactify": "^0.17.1",
     "standard": "^5.3.1",
     "tap": "^0.4.12",
@@ -37,7 +39,6 @@
   },
   "scripts": {
     "test": "standard && tap test/*.js",
-    "start": "node bin/cli",
     "start": "node bin/cli",
     "build-js": "browserify -e --standalone widget-awesome ./lib/browser.js | uglifyjs - > static/bundle.js",
     "build-css": "lessc src/style/widget.less > static/bundle.css",
