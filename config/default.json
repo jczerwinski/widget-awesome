@@ -1,0 +1,6 @@
+{
+  "seaportautopilot": {
+    "onlyBind": true,
+    "port" : 54833
+  }
+}
